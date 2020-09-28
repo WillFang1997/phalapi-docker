@@ -1,0 +1,26 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8000:80"
+    depends_on:
+      - phalapi
+    volumes:
+      - "$DOCKERPATH/app/nginx/conf.d:/etc/nginx/conf.d"
+      - "$DOCKERPATH/app/nginx/nginx.conf:/usr/local/nginx/conf/nginx.conf"
+      - "$DOCKERPATH/app/nginx/html:/usr/share/nginx/html"
+      - "$DOCKERPATH/app/nginx/log:/var/log/nginx"
+    networks:
+      - phalapi_net
+    container_name: "phalapi_nginx"
+  phalapi:
+    image: shuxnhs/phalapi:latest
+    ports: ["9000"]
+    volumes:
+      - "$DOCKERPATH/app/nginx/html/phalapi:/var/www/html/phalapi"
+    networks:
+      - phalapi_net
+    container_name: "phalapi"
+networks:
+  phalapi_net:
