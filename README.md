@@ -2,7 +2,7 @@
 
 ## 为什么要用docker
 
-<img src=http://cd7.yesapi.net/89E670FD80BA98E7F7D7E81688123F32_20200928215312_dee6612f9e5b862c37cd816c3222ce81.jpeg?>
+![Image text](http://cd7.yesapi.net/89E670FD80BA98E7F7D7E81688123F32_20200928215312_dee6612f9e5b862c37cd816c3222ce81.jpeg)
 
 docker作为一种新兴的虚拟化技术，相较于传统的部署方式，使用docker去部署我们的项目，可以有更多的好处，如
 
@@ -92,7 +92,9 @@ docker-compose up -d
 ```
 
 4. 打开我们的浏览器：127.0.0.1:8000即可以看到我们的项目首页：
-<img src=http://cd7.yesapi.net/89E670FD80BA98E7F7D7E81688123F32_20200928232349_2d6400e6eb7f384359b5c06bf7610f52.png?>
+
+![Image text](http://cd7.yesapi.net/89E670FD80BA98E7F7D7E81688123F32_20200928232349_2d6400e6eb7f384359b5c06bf7610f52.png)
+
 
 
 完美，如果感觉有帮助欢迎来github给个小星星✨，后面再来讲讲结合容器中计划任务相关的东西。
